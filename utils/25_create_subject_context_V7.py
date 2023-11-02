@@ -319,8 +319,8 @@ dataModelsToPublish = open_json(configFile)
 # coreContextDictUrl = "etsi_core_context.json"
 coreContextDictUrl="fiware-context.jsonld"
 coreContextDict = open_json(coreContextDictUrl)
-
-customRepository="https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/"
+###       ALWAYS INSERT THE raw URL ie. https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_Data_model/main/material/leather/ 
+customRepository="https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_Data_model/main/material/leather/"
 # https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/schema.json
 # customRepository="https://konstantinosgombakis.github.io/CIRCULOOS_data_model/custom_data_model/"
 # customRepository="https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/custom_data_model/schema.json"
@@ -342,18 +342,19 @@ if dataModelsToPublish["subject"] in repoNames:
     else:
         dataModels = dataModelsList[index]["dataModels"]
     print("_____________________________________________________________________________________________________________________________________________________________________________")
+    echo("dataModels", dataModels)
+    
     for dataModel in dataModels:
-        echo("data Model", dataModel)
+        echo("data ModelHERE", dataModel)
+        echo("repoName", repoName)
         if 'customRepository' in globals():
             urlModelYaml=customRepository+"model.yaml"
         else:
             urlModelYaml = "https://smart-data-models.github.io/" + repoName + "/" + dataModel + "/model.yaml"
+        echo('urlModelYaml',urlModelYaml)
         modelYamlDict = open_yaml(urlModelYaml)
 # debug
-        echo("repoNamsucoe", repoName)
-        echo("dataModels", dataModels)
-        echo("dataModel", dataModel)
-        echo("urlModelYaml", urlModelYaml)
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         echo("modelYamlDict", modelYamlDict)
 # / debug  
 

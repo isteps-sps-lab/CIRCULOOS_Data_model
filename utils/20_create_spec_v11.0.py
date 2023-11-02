@@ -227,7 +227,7 @@ licenseMessageEnd = "/LICENSE.md)"
 
 
 urlNotesRoot = "https://smart-data-models.github.io"
-customRepository="https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/"
+customRepository="https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_Data_model/main/material/leather/"
 # static definitions
 propertyTypes = ["Property", "Relationship", "Geoproperty"]
 
@@ -276,7 +276,7 @@ for dataModel in dataModels:
             # 1: Header with the name of the entity #
             #########################################
             specContent = comment_spec("10-Header", True)
-            specContent += "[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png \"Logo\")](https://smartdatamodels.org)" + chr(10)  + chr(13)
+            # specContent += "[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png \"Logo\")](https://smartdatamodels.org)" + chr(10)  + chr(13)
 
             # this is the name for the final push into github repo
             fullFileName = dataModel + "/doc/" + specFileName
