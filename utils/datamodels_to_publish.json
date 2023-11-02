@@ -1,0 +1,11 @@
+{
+    "dataModels": [
+        "leather"
+    ],
+    "subject": "circuloos_data_model",
+    "filterDataModels": true,
+    "languages": [
+        "EN-US"
+    ],
+    "versionType": "patch"
+}
