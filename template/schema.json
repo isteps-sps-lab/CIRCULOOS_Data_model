@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$id": "https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/custom_data_model/schema.json",
+    "$id": "https://raw.githubusercontent.com/TO_ADD_LATER/schema.json",
     "$schemaVersion": "0.0.1",
     "title": "Data model for buildings elements",
     "description": "Represent buildings elements",
