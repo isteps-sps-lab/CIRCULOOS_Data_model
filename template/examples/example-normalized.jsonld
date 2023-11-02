@@ -1,0 +1,11 @@
+{
+    "id": "urn:ngsi-ld:Room:RoomAB1",
+    "type": "Room",
+    "ceilingHeight": {
+        "type": "Number",
+        "value": 1.0
+    },
+     "@context": [
+        "https://TOBELater/context.jsonld"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
+    "$id": "https://raw.githubusercontent.com/konstantinosGombakis/CIRCULOOS_data_model/main/custom_data_model/schema.json",
+    "$schemaVersion": "0.0.1",
+    "title": "Data model for buildings elements",
+    "description": "Represent buildings elements",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "Storey",
+                        "Room"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be Storey, Room"
+                }, 
+                "ceilingHeight": {
+                    "type": "number", 
+                    "description": "Property. Unit: m",
+                    "minimum": 0
+                }         
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "type"
+    ]
+}
