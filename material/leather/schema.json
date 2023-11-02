@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$id": "https://raw.githubusercontent.com/TO_ADD_LATER/schema.json",
+    "$id": "https://github.com/konstantinosGombakis/CIRCULOOS_Data_model/blob/main/material/leather/schema.json",
     "$schemaVersion": "0.0.1",
     "title": "Data model for representing leather material",
     "description": "Representing leather material for the CIRCILOOS project",
