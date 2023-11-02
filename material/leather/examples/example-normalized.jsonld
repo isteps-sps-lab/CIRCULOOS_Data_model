@@ -1,0 +1,45 @@
+{
+    "id": "urn:ngsi-ld:leather:IDAS1313",
+    "type": "leather",
+    "origin": {
+        "type": "Property",
+        "value": "vegan"
+    },
+    "color": {
+        "type": "Property",
+        "value": "black"
+    },
+    "surfaceSize": {
+        "type": "Property",
+        "value": "2"
+    },
+    "thickness": {
+        "type": "Property",
+        "value": "0.3",
+        "unitCode": "MMT"
+    },
+    "tannedProcess": {
+        "type": "Property",
+        "value": "vegetable"
+    },
+    "type1": {
+        "type": "Property",
+        "value": "split"
+    },
+    "surfaceFinishWithCovering": {
+        "type": "Property",
+        "value": "true"
+    },
+    "hardness": {
+        "type": "Property",
+        "value": "medium"
+    },
+    "recycledTimes": {
+        "type": "Property",
+        "value": "2"
+    },
+
+     "@context": [
+        "https://TOBELater/context.jsonld"
+    ]
+}

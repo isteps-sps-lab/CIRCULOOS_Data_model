@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "modelTags": "",
+    "$id": "https://raw.githubusercontent.com/TO_ADD_LATER/schema.json",
+    "$schemaVersion": "0.0.1",
+    "title": "Data model for representing leather material",
+    "description": "Representing leather material for the CIRCILOOS project",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+        },
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+        },
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "leather"
+                    ],
+                    "description": "Property. NGSI Entity type. It has to be Storey, leather"
+                }, 
+                "origin": {
+                    "type": "string", 
+                    "description": "Property. The source that the leather was originated",
+                    "enum": [
+                        "cow",
+                        "pig",
+                        "horse",
+                        "other animals",
+                        "vegan"
+                        ]
+                },
+                "color":{
+                    "type": "string",
+                    "description": "Property. The final color of the leather",
+                    "enum": [
+                        "brown",
+                        "black",
+                        "....",
+                        "rainbow"
+                    ]
+                },
+                "surfaceSize":{
+                    "type": "integer",
+                    "description": "Property. The surface size of the leather. Unit palm ie humman palm",
+                    "minimum":0
+                },
+                "thickness":{
+                    "type":"float",
+                    "description":"Property. The thickness of the leather",
+                    "minimum":0
+                },
+                "tannedProcess":{
+                    "type":"string",
+                    "description":"Property. The tanned used",
+                    "enum":[
+                        "chrome",
+                        "vegetable"
+                    ]
+                },
+                "type1":{
+                    "type":"string",
+                    "description":"Property. The treatment used",
+                    "enum":[
+                        "grainside",
+                        "split",
+                        "nubuck",
+                        "suede",
+                        "furs"
+                    ]
+                },
+                "surfaceFinishWithCovering":{
+                    "type":"boolean",
+                    "description":"Property. Leather finished (with covering) or not finished"
+                },
+                "hardness":{
+                    "type":"string",
+                    "description":"Property. Overall hardness of the leather",
+                    "enum":[
+                        "soft",
+                        "medium",
+                        "hard"
+                    ]
+                },
+                "recycledTimes":{
+                    "type": "integer",
+                    "description": "Property. The number of times that the leather have been recycled",
+                    "minimum":0
+                }        
+            }
+        }
+    ],
+    "required": [
+        "id",
+        "type",
+        "color",
+        "surfaceSize"
+    ]
+}
